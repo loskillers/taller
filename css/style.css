@@ -7,6 +7,8 @@ body{
 header {
   padding: 2px 2px;
   margin: 0;
+  box-shadow: 0 0 4px;
+  margin-bottom: 10px;
 }
 
 figure{
@@ -62,10 +64,12 @@ section {
 }
 
 aside {
-  background-color: green;
+  /*background-color: green;*/
   width: 29%;
   display: inline-block;
   float: right;
+  box-shadow: 1px 1px 4px;
+  border-radius: 4px;
 }
 
 footer {
