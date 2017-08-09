@@ -68,12 +68,60 @@ aside {
   float: right;
 }
 
+
 footer {
-  background-color: red;
+  background-color: #262324;
   position: fixed;
   bottom: 0px;
   width: 100%;
-  height: 10%;
+  /*height: 2rem;*/
+  /*display: block;*/
+}
+
+footer #imgContent{
+  margin: 0 auto;
+  padding-top: 10px;
+  /*text-align: center;*/
+  width: 50%;
+  display: inline-block;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+footer #imgContent figure{
+    display: inline;
+    width: 100%;
+}
+
+footer #imgContent figure img{
+  /*width: 100%;*/
+  opacity: 0.4;
+  width: 5vh;
+}
+
+footer #imgContent figure img:hover{
+  opacity: 0.9;
+}
+
+footer #contactForm{
+  display: inline-block;
+  font-size: 3vh;
+  float: right;
+  width: 50%;
+  border-left: 1px solid white;
+  box-sizing: border-box;
+  /*margin-left: 50px;*/
+}
+
+footer #contactForm ul{
+  padding: 0px;
+  list-style: none;
+  color:white;
+  width: 40%;
+  margin: 0px;
+  display: inline-block;
+  font-size: 0.6em;
 }
 
 /*
