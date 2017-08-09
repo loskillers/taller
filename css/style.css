@@ -1,7 +1,8 @@
 /*color: rgb(202, 37 ,57)*/
 
 body{
-  margin:0;
+  margin: 0;
+  background-color: rgb(240, 240, 240);
 }
 
 header {
@@ -9,6 +10,7 @@ header {
   margin: 0;
   box-shadow: 0 0 4px;
   margin-bottom: 10px;
+  background-color: white;
 }
 
 figure{
