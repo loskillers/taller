@@ -128,6 +128,17 @@ footer #contactForm ul{
   font-size: 0.6em;
 }
 
+
+footer #contactForm ul:first-child{
+  margin-left: 15%;
+  width: 45%;
+}
+
+footer #contactForm ul:last-child{
+  float: right;
+}
+
+
 /*
 
 @media (max-width: 500px) {
