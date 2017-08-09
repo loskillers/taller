@@ -113,7 +113,7 @@ footer #contactForm{
   font-size: 3vh;
   float: right;
   width: 50%;
-  border-left: 1px solid white;
+  border-left: 1px solid #848484;
   box-sizing: border-box;
   /*margin-left: 50px;*/
 }
@@ -121,7 +121,7 @@ footer #contactForm{
 footer #contactForm ul{
   padding: 0px;
   list-style: none;
-  color:white;
+  color:#E6E6E6;
   width: 40%;
   margin: 0px;
   display: inline-block;
