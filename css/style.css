@@ -134,6 +134,7 @@ footer #contactForm{
   width: 50%;
   border-left: 1px solid #848484;
   box-sizing: border-box;
+  font-family: "SourceSansPro-Light";
   /*margin-left: 50px;*/
 }
 
@@ -186,6 +187,7 @@ footer #contactForm ul:last-child{
 
   nav ul li a{
     margin: 0px;
+    font-size: 1.2rem;
   }
 
 /* FIN CAMBIO DEL MENU */
