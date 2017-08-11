@@ -2,8 +2,9 @@
 /* los rems son la mejor unidad para hacer
 todo responsive */
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p,li{
   font-family: "SourceSansPro-Bold";
+  color: #696969;
 }
 
 p{
@@ -69,9 +70,31 @@ nav ul li a:hover {
 section {
   width: 70%;
   display: inline-block;
-  /*box-shadow: 1px 1px 4px;*/
   font-family: "SourceSansPro-Regular";
   background-color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+section:last-of-type{
+  margin-bottom: 50px;
+}
+
+section article h3{
+  text-align: center;
+}
+
+section article h3.destacada{
+  text-decoration: underline;
+}
+
+section h4{
+    padding-left: 20px;
+}
+
+section article ul li{
+  font-family: "SourceSansPro-Light";
 }
 
 aside {
@@ -86,15 +109,12 @@ aside {
 
 aside h3 {
   padding-left: 10px;
-  color: grey;
   font-size: 16px;
 }
 
 aside p {
   padding-left: 10px;
   padding-right: 10px;
-  color: grey;
-  font-size: 14px;
 }
 
 footer {
@@ -102,6 +122,7 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
+  opacity: 0.9;
 }
 
 footer #imgContent{
@@ -200,12 +221,17 @@ footer #contactForm ul:last-child{
     margin-bottom: 10px;
   }
 
+  section:last-of-type{
+    margin-bottom: 50px;
+  }
+
   aside {
     width: inherit;
     display: block;
     border-radius: 2px;
-    background-color: white;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
+    float: none;
+    padding-bottom: 5px;
   }
 
   aside h3{
@@ -215,7 +241,6 @@ footer #contactForm ul:last-child{
 
   footer{
     padding: 5px 0px 0px 0px;
-    opacity: 0.9;
   }
 
   footer div#imgContent{
@@ -256,7 +281,7 @@ footer #contactForm ul:last-child{
 
 @media (min-width: 768px)  and (max-width: 991px){
   aside{
-    background-color: blue;
+    /*background-color: blue;*/
   }
 }
 
@@ -264,7 +289,7 @@ footer #contactForm ul:last-child{
 
 @media (min-width: 992px) and (max-width: 1199px){
 aside{
-    background-color: GREEN;
+    /*background-color: GREEN;*/
   }
 }
 
@@ -272,6 +297,6 @@ aside{
 
 @media (min-width: 1200px) {
   aside{
-      background-color: yellow;
+      /*background-color: yellow;*/
     }
 }
