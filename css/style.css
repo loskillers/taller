@@ -67,6 +67,10 @@ nav ul li a:hover {
   border-bottom: 3px solid rgb(202, 37 ,57);
 }
 
+nav ul li a.active {
+  border-bottom: 3px solid rgb(202, 37 ,57);
+}
+
 section {
   width: 70%;
   display: inline-block;
