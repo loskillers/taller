@@ -19,9 +19,9 @@ todo responsive */
   background-color: #4b9e4b;
 }
 
-h1,h2,h3,h4,h5,h6,p,li{
+h1,h2,h3,h4,h5,h6,p{
   font-family: "SourceSansPro-Bold";
-  color: #696969;
+  color: black;
 }
 
 p{
@@ -226,87 +226,87 @@ footer #contactForm ul:last-child{
 
 @media (max-width: 767px) {
 
-/* CAMBIO EN EL MENU */
+  /* CAMBIO EN EL MENU */
 
-header figure{
-  display: block;
-  text-align: center;
-  width: inherit;
-}
+  header figure{
+    display: block;
+    text-align: center;
+    width: inherit;
+  }
 
-nav{
-  display: block;
-  float: none;
-  text-align: center;
-  margin-right: 0px;
-}
+  nav{
+    display: block;
+    float: none;
+    text-align: center;
+    margin-right: 0px;
+  }
 
-nav ul{
-  padding: 10px 0px;
-}
+  nav ul{
+    padding: 10px 0px;
+  }
 
-nav ul li a{
-  margin: 0px;
-  font-size: 1.2rem;
-}
+  nav ul li a{
+    margin: 0px;
+    font-size: 1.2rem;
+  }
 
-form {
-  padding: 10px;
-  background-color: white;
-}
+  form {
+    padding: 10px;
+    background-color: white;
+  }
 
-form cite {
-  font-size: 0.8rem;
-  color: grey;
-}
+  form cite {
+    font-size: 0.8rem;
+    color: grey;
+  }
 
-form ul {
-  padding-left: 0;
-}
+  form ul {
+    padding-left: 0;
+  }
 
-form ul li {
-  list-style: none;
-  margin: 0.6rem;
-}
+  form ul li {
+    list-style: none;
+    margin: 0.6rem;
+  }
 
-form ul li label {
-  display: block;
-}
+  form ul li label {
+    display: block;
+  }
 
-label {
-  font-family: "SourceSansPro-Regular";
-}
+  label {
+    font-family: "SourceSansPro-Regular";
+  }
 
-.form {
-  width: 60%;
-}
+  .form {
+    width: 60%;
+  }
 
-nav ul li a.active {
-  border-bottom: 3px solid rgb(189, 214 ,0);
-}
+  nav ul li a.active {
+    border-bottom: 3px solid rgb(189, 214 ,0);
+  }
 
-.exito {
-  background-color: rgb(189, 214 ,0);
-  text-decoration: none;
-  color: white;
-  font-size: 2rem;
-  padding: 10px;
-  margin-bottom: 10px;
-  display: inline-block;
-}
+  .exito {
+    background-color: rgb(189, 214 ,0);
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
 
-#success {
-  padding-left: 10px;
-}
+  #success {
+    padding-left: 10px;
+  }
 
-textarea {
-  width: 90%;
-  height: auto;
-}
+  textarea {
+    width: 90%;
+    height: auto;
+  }
 
-form p {
-  font-size: 0.8rem;
-}
+  form p {
+    font-size: 0.8rem;
+  }
 
 /* FIN CAMBIO DEL MENU */
 

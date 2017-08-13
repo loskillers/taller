@@ -2,9 +2,9 @@
 /* los rems son la mejor unidad para hacer
 todo responsive */
 
-h1,h2,h3,h4,h5,h6,p,li{
+h1,h2,h3,h4,h5,h6,p{
   font-family: "SourceSansPro-Bold";
-  color: #696969;
+  color: black;
 }
 
 p{
