@@ -17,14 +17,14 @@
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="competition.html" class="active">Contacto</a></li>
+          <li><a href="competition.html" class="active">Concurso</a></li>
         </ul>
       </nav>
     </header>
     <section>
+      <h3>Inscríbete para el primer concurso de videos de cocina del Uruguay.</h3>
+      <p><cite>Todos los campos son obligatorios.</cite></p>
       <form id="formulario" action="success.html" method="post">
-        <h3>Inscríbete para el primer concurso de videos de cocina del Uruguay.</h3>
-        <p><cite>Todos los campos son obligatorios.</cite></p>
         <ul>
           <li>
             <label for="txtNombre">Nombre</label>
@@ -73,7 +73,7 @@
             <label for="chkCondiciones" class="linealCondiciones">Acepta las condiciones establecidas en el concurso</label>
             <input type="checkbox" id="chkCondiciones" required>
           </li>
-          <p>
+          <p id="terminos">
             * "Constituyo el domicilio electrónico que registro en este formulario.
             Además autorizo al servicio a realizar las comunicaciones y notificaciones
             personales de los actos indicados en el cap. III del Instructivo de
@@ -86,12 +86,17 @@
           </p>
           <p>
             <input type="submit" class="btnSuccess" value="Enviar">
-            <!-- <a href="" class="btnSuccess">Enviar</a> -->
           </p>
         </ul>
       </form>
     </section>
-
+    <aside>
+      <iframe
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDN85JjhIBzBjTGGnBeU9dOV2DzDulrbg4
+          &q=Montevideo,+Uruguay/" allowfullscreen>
+      </iframe>
+    </aside>
     <footer>
       <div id="imgContent">
         <figure>

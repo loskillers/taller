@@ -3,10 +3,25 @@
 /* los rems son la mejor unidad para hacer
 todo responsive */
 
+
+/* SECCION SUCCES */
+
+#success {
+  /*padding-left: 10px;*/
+  display: block;
+  background-color: white;
+  text-align: center;
+  padding: 20px 0px;
+  margin-bottom: 50px;
+}
+
+/* FIN SECCION SUCCESS */
+
 .btnSuccess{
   display: inline-block;
   padding: 10px 20px;
   background-color: #5cb85c;
+  font-size: 17px;
   color:white;
   text-decoration: none;
   font-family: "SourceSansPro-Light";
@@ -98,28 +113,21 @@ nav ul li a.active {
 }
 
 section {
-  display: block;
+  /* NUEVO */
+  display: inline-block;
+  width: 60%;
+  /* FIN */
   font-family: "SourceSansPro-Regular";
   background-color: white;
   padding: 5px;
   margin-bottom: 10px;
   box-sizing: border-box;
+  text-align: center;
 }
+
 
 section:last-of-type{
   margin-bottom: 50px;
-}
-
-section p:last-of-type{
-  text-align: center;
-}
-
-section article h3{
-  text-align: center;
-}
-
-section article h3.destacada{
-  text-decoration: underline;
 }
 
 section h4{
@@ -128,6 +136,44 @@ section h4{
 
 section ul li{
   list-style: none;
+}
+
+section ul li input[type='text'],input[type='tel'],input[type='email']{
+  width: 70%;
+  height: 20px;
+}
+
+/* INICIO DEL FORM */
+
+
+form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+form select {
+  width: 72%;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+form textarea {
+  width: 70%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+form #terminos{
+  width: 100%;
+}
+
+form input{
+  margin-bottom: 10px;
+}
+
+section ul li label{
+  width: 100%;
+  display: block;
 }
 
 #lineal label{
@@ -142,25 +188,30 @@ section ul li{
   font-family: "SourceSansPro-Light";
 }
 
+
+/* FIN DEL FORM */
+
+/* INICIO ASIDE */
+
 aside {
-  width: 29%;
+  width: 39%;
   display: inline-block;
   float: right;
   box-shadow: 1 1 4px;
   border-radius: 2px;
   background-color: white;
   margin-bottom: 60px;
+  border: 1px solid black;
 }
 
-aside h3 {
-  padding-left: 10px;
-  font-size: 16px;
+aside iframe {
+  width: 100%;
 }
 
-aside p {
-  padding-left: 10px;
-  padding-right: 10px;
-}
+/* FIN ASIDE */
+
+
+/* INICIO FOOTER */
 
 footer {
   background-color: #262324;
@@ -225,7 +276,7 @@ footer #contactForm ul:last-child{
   float: right;
 }
 
-
+/* FIN FOOTER */
 
 
 
@@ -233,9 +284,9 @@ footer #contactForm ul:last-child{
 
 @media (max-width: 767px) {
 
-/* CAMBIO EN EL MENU */
+  /* INICIO HEADER */
 
-header figure{
+  header figure{
   display: block;
   text-align: center;
   width: inherit;
@@ -257,9 +308,38 @@ nav ul li a{
   font-size: 1.2rem;
 }
 
+nav ul li a.active {
+  border-bottom: 3px solid rgb(189, 214 ,0);
+}
+
+/* FIN DEL HEADER */
+
+/* INICIO SECTION */
+
+section{
+  display: block;
+  width: inherit;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+section:last-of-type{
+  margin-bottom: 50px;
+}
+
+section p:last-of-type{
+  text-align: center;
+}
+
+/* FIN SECTION */
+
+/* INICIO DEL FORM */
+
 form {
-  padding: 10px;
+  padding: 0px;
   background-color: white;
+  width: 100%;
 }
 
 form cite {
@@ -284,18 +364,6 @@ label {
   font-family: "SourceSansPro-Regular";
 }
 
-.form {
-  width: 60%;
-}
-
-nav ul li a.active {
-  border-bottom: 3px solid rgb(189, 214 ,0);
-}
-
-#success {
-  padding-left: 10px;
-}
-
 textarea {
   width: 90%;
   height: auto;
@@ -305,33 +373,32 @@ form p {
   font-size: 0.8rem;
 }
 
+/* FIN DEL FORM */
+
+
 /* FIN CAMBIO DEL MENU */
 
-  section{
-    display: block;
-    width: inherit;
-    padding: 5px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
+/*  INICIO ASIDE  */
 
-  section:last-of-type{
-    margin-bottom: 50px;
-  }
 
-  aside {
-    width: inherit;
-    display: block;
-    border-radius: 2px;
-    margin-bottom: 10px;
-    float: none;
-    padding-bottom: 5px;
-  }
+aside {
+  width: inherit;
+  display: block;
+  border-radius: 2px;
+  margin-bottom: 50px;
+  float: none;
+  padding-bottom: 5px;
+}
 
-  aside h3{
-    font-size: 1.5rem;
-    margin-left: 10px;
-  }
+aside h3{
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+
+/* FIN ASIDE  */
+
+/* INICIO FOOTER */
 
   footer{
     padding: 5px 0px 0px 0px;
@@ -366,6 +433,8 @@ form p {
     font-size: 0.9rem;
   }
 
+  /* FIN FOOTER */
+
 }
 
 
@@ -374,23 +443,14 @@ form p {
 /* Small Devices (SM) Para tablets  */
 
 @media (min-width: 768px)  and (max-width: 991px){
-  aside{
-    /*background-color: blue;*/
-  }
 }
 
 /* Medium Devices (MD) Para dektops */
 
 @media (min-width: 992px) and (max-width: 1199px){
-aside{
-    /*background-color: GREEN;*/
-  }
 }
 
 /* Large Devices (LG) Para desktops grandes */
 
 @media (min-width: 1200px) {
-  aside{
-      /*background-color: yellow;*/
-    }
 }

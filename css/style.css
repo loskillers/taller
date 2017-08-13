@@ -24,14 +24,14 @@ header {
   background-color: white;
 }
 
-figure {
+header figure {
   display: inline-block;
   width: 11%;
   margin: 10px;
   text-align: center;
 }
 
-figure img {
+header figure img {
   width: 30%;
 }
 
@@ -79,6 +79,27 @@ section {
   padding: 5px;
   margin-bottom: 10px;
   box-sizing: border-box;
+}
+
+figure {
+  display: block;
+  width: none;
+}
+
+section img {
+  width: 100%;
+  border: solid 0.4rem;
+}
+
+.galeria img{
+  display: inline-block;
+  width: 25%;
+  transition: .2s ease all;
+}
+
+.galeria img:hover{
+  display: inline-block;
+  width: 30%;
 }
 
 section:last-of-type{
@@ -296,15 +317,14 @@ footer #contactForm ul:last-child{
 /* Medium Devices (MD) Para dektops */
 
 @media (min-width: 992px) and (max-width: 1199px){
-aside{
-    /*background-color: GREEN;*/
-  }
+
 }
 
 /* Large Devices (LG) Para desktops grandes */
 
 @media (min-width: 1200px) {
-  aside{
-      /*background-color: yellow;*/
-    }
+  section img {
+    max-width: 60%;
+    border: solid 0.4rem;
+  }
 }
