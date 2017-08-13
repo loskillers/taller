@@ -252,6 +252,10 @@ label {
   width: 60%;
 }
 
+nav ul li a.active {
+  border-bottom: 3px solid rgb(189, 214 ,0);
+}
+
 .exito {
   background-color: rgb(189, 214 ,0);
   text-decoration: none;
