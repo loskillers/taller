@@ -12,6 +12,7 @@ todo responsive */
   font-family: "SourceSansPro-Light";
   border-radius: 10px;
   text-align: center;
+  cursor: pointer;
 }
 
 .btnSuccess:hover{
@@ -123,6 +124,10 @@ section ul li{
 }
 
 #lineal label{
+  display: inline;
+}
+
+.linealCondiciones{
   display: inline;
 }
 
