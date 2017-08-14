@@ -177,11 +177,16 @@
     border-radius: 2px;
     background-color: white;
     margin-bottom: 60px;
-    border: 1px solid black;
+    border: 1px solid white;
   }
 
   aside iframe {
+    height: 20rem;
     width: 100%;
+  }
+
+  aside h4, p {
+    padding-left: 10px;
   }
 
   footer {
@@ -235,7 +240,6 @@
     display: inline-block;
     font-size: 0.6em;
   }
-
 
   footer #contactForm ul:first-child{
     margin-left: 15%;
