@@ -1,13 +1,6 @@
-/*color masterchef: rgb(202, 37 ,57)*/
-/*color elgourmet: rgb(189, 214 ,0)*/
-/* los rems son la mejor unidad para hacer
-todo responsive */
-
-
 /* SECCION SUCCES */
 
 #success {
-  /*padding-left: 10px;*/
   display: block;
   background-color: white;
   text-align: center;
@@ -83,10 +76,8 @@ nav ul li a.active {
 }
 
 section {
-  /* NUEVO */
   display: inline-block;
   width: 60%;
-  /* FIN */
   font-family: "SourceSansPro-Regular";
   background-color: white;
   padding: 5px;
@@ -233,7 +224,6 @@ footer #contactForm{
   border-left: 1px solid #848484;
   box-sizing: border-box;
   font-family: "SourceSansPro-Light";
-  /*margin-left: 50px;*/
 }
 
 footer #contactForm ul{
@@ -255,9 +245,6 @@ footer #contactForm ul:first-child{
 footer #contactForm ul:last-child{
   float: right;
 }
-
-/* FIN FOOTER */
-
 
 
 /* Extra Small (XS) para smartphones*/
