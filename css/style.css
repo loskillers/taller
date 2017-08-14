@@ -2,9 +2,8 @@
 /* los rems son la mejor unidad para hacer
 todo responsive */
 
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6{
   font-family: "SourceSansPro-Bold";
-  color: black;
 }
 
 p{
@@ -29,10 +28,6 @@ header figure {
   width: 11%;
   margin: 10px;
   text-align: center;
-}
-
-header figure img {
-  width: 30%;
 }
 
 #logo {
@@ -81,29 +76,14 @@ section {
   box-sizing: border-box;
 }
 
-figure {
-  display: block;
-  width: none;
-}
-
-section img {
-  width: 100%;
-  border: solid 0.4rem;
-}
-
-.galeria img{
-  display: inline-block;
-  width: 25%;
-  transition: .2s ease all;
-}
-
-.galeria img:hover{
-  display: inline-block;
-  width: 30%;
-}
-
 section:last-of-type{
   margin-bottom: 50px;
+}
+
+section article figure img {
+  width: 60%;
+  border: solid 0.2rem;
+  box-sizing: border-box;
 }
 
 section article h3{
@@ -114,12 +94,23 @@ section article h3.destacada{
   text-decoration: underline;
 }
 
-section h4{
+section article h4{
     padding-left: 20px;
 }
 
 section article ul li{
   font-family: "SourceSansPro-Light";
+}
+
+section article .galeria img{
+  display: inline-block;
+  width: 25%;
+  transition: .2s ease all;
+}
+
+section article .galeria img:hover{
+  display: inline-block;
+  width: 30%;
 }
 
 aside {
@@ -186,7 +177,6 @@ footer #contactForm{
   border-left: 1px solid #848484;
   box-sizing: border-box;
   font-family: "SourceSansPro-Light";
-  /*margin-left: 50px;*/
 }
 
 footer #contactForm ul{
@@ -199,7 +189,6 @@ footer #contactForm ul{
   font-size: 0.6em;
 }
 
-
 footer #contactForm ul:first-child{
   margin-left: 15%;
   width: 45%;
@@ -210,14 +199,9 @@ footer #contactForm ul:last-child{
 }
 
 
-
-
-
 /* Extra Small (XS) para smartphones*/
 
 @media (max-width: 767px) {
-
-/* CAMBIO EN EL MENU */
 
   header figure{
     display: block;
@@ -241,17 +225,33 @@ footer #contactForm ul:last-child{
     font-size: 1.2rem;
   }
 
-/* FIN CAMBIO DEL MENU */
-
   section{
     display: block;
     width: inherit;
-    padding: 5px;
-    margin-bottom: 10px;
   }
 
+  /* el ultimo tipo de elemento en este caso section aplicale lo siguiente */
   section:last-of-type{
     margin-bottom: 50px;
+  }
+
+  section article figure img {
+    width: 100%;
+  }
+
+  section article .galeria{
+    text-align: center;
+    margin: 5px;
+  }
+
+  section article .galeria img{
+    width: 30%;
+    border: 0.2rem solid black;
+    box-sizing: border-box;
+  }
+
+  section article .galeria img:hover{
+    width: 32%;
   }
 
   aside {
@@ -265,7 +265,7 @@ footer #contactForm ul:last-child{
 
   aside h3{
     font-size: 1.5rem;
-    margin-left: 10px;
+    padding-left: 20px;
   }
 
   footer{
@@ -301,30 +301,4 @@ footer #contactForm ul:last-child{
     font-size: 0.9rem;
   }
 
-}
-
-
-
-
-/* Small Devices (SM) Para tablets  */
-
-@media (min-width: 768px)  and (max-width: 991px){
-  aside{
-    /*background-color: blue;*/
-  }
-}
-
-/* Medium Devices (MD) Para dektops */
-
-@media (min-width: 992px) and (max-width: 1199px){
-
-}
-
-/* Large Devices (LG) Para desktops grandes */
-
-@media (min-width: 1200px) {
-  section img {
-    max-width: 60%;
-    border: solid 0.4rem;
-  }
 }

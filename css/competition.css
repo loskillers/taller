@@ -17,34 +17,9 @@ todo responsive */
 
 /* FIN SECCION SUCCESS */
 
-.btnSuccess{
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #5cb85c;
-  font-size: 17px;
-  color:white;
-  text-decoration: none;
-  font-family: "SourceSansPro-Light";
-  border-radius: 10px;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  box-shadow: none;
-}
-
-.btnSuccess:hover{
-  background-color: #4b9e4b;
-}
-
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6{
   font-family: "SourceSansPro-Bold";
   color: black;
-}
-
-p cite {
-  font-family: "SourceSansPro-regular";
-  font-size: 0.8rem;
-  color: grey;
 }
 
 p{
@@ -64,15 +39,11 @@ header {
   background-color: white;
 }
 
-figure {
+header figure {
   display: inline-block;
   width: 11%;
   margin: 10px;
   text-align: center;
-}
-
-figure img {
-  width: 30%;
 }
 
 #logo {
@@ -89,7 +60,6 @@ nav {
 nav ul {
   padding: 20px 0;
 }
-/**/
 
 nav ul li {
   display: inline-block;
@@ -120,78 +90,93 @@ section {
   font-family: "SourceSansPro-Regular";
   background-color: white;
   padding: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
   box-sizing: border-box;
   text-align: center;
-}
-
-
-section:last-of-type{
-  margin-bottom: 50px;
 }
 
 section h4{
     padding-left: 20px;
 }
 
-section ul li{
-  list-style: none;
+section p:first-of-type {
+  /* Se aplica a "Todos los campos son obligatorios." */
+  font-size: 0.8rem;
+  color: gray;
 }
 
-section ul li input[type='text'],input[type='tel'],input[type='email']{
-  width: 70%;
-  height: 20px;
-}
 
-/* INICIO DEL FORM */
-
-
-form {
+section form {
   width: 60%;
   margin: 0 auto;
 }
 
-form select {
+
+section form ul{
+  padding: 0px;
+  list-style: none;
+}
+
+section form ul li input[type='text'],input[type='tel'],input[type='email']{
+  width: 70%;
+  height: 20px;
+}
+
+section form select {
   width: 72%;
   height: 30px;
   margin-bottom: 5px;
 }
 
-form textarea {
+section form textarea {
   width: 70%;
   height: 30px;
   margin-bottom: 20px;
 }
 
-form #terminos{
+section form #terminos{
   width: 100%;
 }
 
-form input{
+section form input{
   margin-bottom: 10px;
 }
 
-section ul li label{
+section form ul li label{
   width: 100%;
   display: block;
 }
 
-#lineal label{
+section form #radioButtons label{
   display: inline;
 }
 
-.linealCondiciones{
+section form .inlineCondiciones{
   display: inline;
 }
 
-.font-normal{
+section form #radioButtons label{
   font-family: "SourceSansPro-Light";
 }
 
+.btnSuccess{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  font-size: 17px;
+  color:white;
+  text-decoration: none;
+  font-family: "SourceSansPro-Light";
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+}
 
-/* FIN DEL FORM */
-
-/* INICIO ASIDE */
+.btnSuccess:hover{
+  background-color: #4b9e4b;
+}
 
 aside {
   width: 39%;
@@ -207,11 +192,6 @@ aside {
 aside iframe {
   width: 100%;
 }
-
-/* FIN ASIDE */
-
-
-/* INICIO FOOTER */
 
 footer {
   background-color: #262324;
@@ -284,121 +264,86 @@ footer #contactForm ul:last-child{
 
 @media (max-width: 767px) {
 
-  /* INICIO HEADER */
-
   header figure{
-  display: block;
-  text-align: center;
-  width: inherit;
-}
+    display: block;
+    text-align: center;
+    width: inherit;
+  }
 
-nav{
-  display: block;
-  float: none;
-  text-align: center;
-  margin-right: 0px;
-}
+  nav{
+    display: block;
+    float: none;
+    text-align: center;
+    margin-right: 0px;
+  }
 
-nav ul{
-  padding: 10px 0px;
-}
+  nav ul{
+    padding: 10px 0px;
+  }
 
-nav ul li a{
-  margin: 0px;
-  font-size: 1.2rem;
-}
+  nav ul li a{
+    margin: 0px;
+    font-size: 1.2rem;
+  }
 
-nav ul li a.active {
-  border-bottom: 3px solid rgb(189, 214 ,0);
-}
+  nav ul li a.active {
+    border-bottom: 3px solid rgb(189, 214 ,0);
+  }
 
-/* FIN DEL HEADER */
+  section{
+    display: block;
+    width: inherit;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
 
-/* INICIO SECTION */
+  section p:first-of-type{
+    font-size: 0.8rem;
+    color: gray;
+  }
 
-section{
-  display: block;
-  width: inherit;
-  padding: 5px;
-  margin-bottom: 10px;
-  margin-left: 0px;
-}
+  section form {
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+  }
 
-section:last-of-type{
-  margin-bottom: 50px;
-}
+  section form ul {
+    padding-left: 0;
+  }
 
-section p:last-of-type{
-  text-align: center;
-}
+  section form ul li {
+    list-style: none;
+    margin: 0.6rem;
+  }
 
-/* FIN SECTION */
+  section form ul li label {
+    display: block;
+  }
 
-/* INICIO DEL FORM */
+  section form ul li textarea {
+    width: 90%;
+    height: auto;
+  }
 
-form {
-  padding: 0px;
-  background-color: white;
-  width: 100%;
-}
+  section form p {
+    font-size: 0.8rem;
+  }
 
-form cite {
-  font-size: 0.8rem;
-  color: grey;
-}
+  aside {
+    width: inherit;
+    display: block;
+    border-radius: 2px;
+    margin-bottom: 50px;
+    float: none;
+    padding-bottom: 5px;
+  }
 
-form ul {
-  padding-left: 0;
-}
-
-form ul li {
-  list-style: none;
-  margin: 0.6rem;
-}
-
-form ul li label {
-  display: block;
-}
-
-label {
-  font-family: "SourceSansPro-Regular";
-}
-
-textarea {
-  width: 90%;
-  height: auto;
-}
-
-form p {
-  font-size: 0.8rem;
-}
-
-/* FIN DEL FORM */
-
-
-/* FIN CAMBIO DEL MENU */
-
-/*  INICIO ASIDE  */
-
-
-aside {
-  width: inherit;
-  display: block;
-  border-radius: 2px;
-  margin-bottom: 50px;
-  float: none;
-  padding-bottom: 5px;
-}
-
-aside h3{
-  font-size: 1.5rem;
-  margin-left: 10px;
-}
-
-
-/* FIN ASIDE  */
-
-/* INICIO FOOTER */
+  aside h3{
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
 
   footer{
     padding: 5px 0px 0px 0px;
@@ -415,7 +360,6 @@ aside h3{
 
   footer div#imgContent figure img{
     width: 1.5rem;
-    /*font-size: 1rem;*/
   }
 
   footer ul li{
@@ -433,24 +377,4 @@ aside h3{
     font-size: 0.9rem;
   }
 
-  /* FIN FOOTER */
-
-}
-
-
-
-
-/* Small Devices (SM) Para tablets  */
-
-@media (min-width: 768px)  and (max-width: 991px){
-}
-
-/* Medium Devices (MD) Para dektops */
-
-@media (min-width: 992px) and (max-width: 1199px){
-}
-
-/* Large Devices (LG) Para desktops grandes */
-
-@media (min-width: 1200px) {
 }
