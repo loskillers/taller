@@ -120,8 +120,8 @@
   }
 
   section form textarea {
-    width: 70%;
-    height: 30px;
+    width: 80%;
+    height: 6rem;
     margin-bottom: 20px;
   }
 
@@ -315,7 +315,7 @@
 
   section form ul li textarea {
     width: 90%;
-    height: auto;
+    height: 4rem;
   }
 
   section form p {
