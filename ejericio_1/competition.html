@@ -32,15 +32,15 @@
           </li>
           <li>
             <label for="txtDireccion">Dirección</label>
-            <input type="text" id="txtDireccion" class="form" placeholder="Dirección" pattern="[0]" required>
+            <input type="text" id="txtDireccion" class="form" placeholder="Dirección" pattern="[A-Za-z0-9\.]{0,20}" required>
           </li>
           <li>
             <label for="txtTelefono">Teléfono</label>
-            <input type="tel" id="txtTelefono" class="form" placeholder="Teléfono" required>
+            <input type="tel" id="txtTelefono" class="form" placeholder="Teléfono" pattern="[0-9]{0,14}" required>
           </li>
           <li>
             <label for="txtEmail">E-mail</label>
-            <input type="email" id="txtEmail" class="form" placeholder="E-mail" required>
+            <input type="email" id="txtEmail" class="form" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
           </li>
           <li>
             <label for="rdoGenero">Sexo</label>
