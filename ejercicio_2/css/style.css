@@ -1,0 +1,15 @@
+section{
+  margin-top: 10px;
+}
+
+section figure:last-of-type{
+  cursor: pointer;
+}
+
+section figure img{
+  opacity: 0.9;
+}
+
+section figure:last-of-type img:hover{
+  opacity: 1;
+}
