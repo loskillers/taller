@@ -13,3 +13,23 @@ section figure img{
 section figure:last-of-type img:hover{
   opacity: 1;
 }
+
+header nav figure {
+  display: inline-block;
+  width: 11%;
+  margin: 10px;
+  text-align: center;
+}
+
+#logo {
+  height: 35px;
+  width: auto;
+}
+
+#slide {
+  background-color: rgb(240, 240, 240);
+}
+
+video {
+  width: 100%;
+}
