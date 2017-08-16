@@ -1,7 +1,3 @@
-body{
-  background-color:white;
-}
-
 header nav figure {
   display: inline-block;
   width: 11%;
@@ -31,14 +27,6 @@ section #jurado figure img , #participantes figure img , .modal figure img{
   width: 100%;
 }
 
-#multimedia{
-    background-image: url("../img/background.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 20px;
-}
-
 video {
   width: 100%;
 }
@@ -53,12 +41,12 @@ video {
   bottom: 30px;
   right: 30px;
   z-index: 10;
-  background-color: rgba(255, 0, 0, 0.7);
+  background-color: rgba(208, 33, 61, 0.9);
   border-radius: 50%;
 }
 
 .up-icon:hover{
-  background-color: rgba(255, 0, 0, 0.9);
+  background-color: rgba(208, 33, 61, 1);
 }
 
 .up-icon span{
@@ -66,10 +54,4 @@ video {
   font-size: 20px;
   color:white;
   padding: 10px 10px 11px 10px;
-}
-
-@media (max-width: 767px) {
-  #multimedia{
-    background-image: url("../img/background_smartphone.jpg");
-  }
 }
