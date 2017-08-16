@@ -1,6 +1,6 @@
-/* SECCION SUCCES */
+/* INICIO MAIN --- SUCCES.HTML */
 
-  #success {
+  main {
     display: block;
     background-color: white;
     text-align: center;
@@ -8,7 +8,7 @@
     margin-bottom: 50px;
   }
 
-/* FIN SECCION SUCCESS */
+/* FIN MAIN - SUCCESS.HTML */
 
   h1,h2,h3,h4,h5,h6{
     font-family: "SourceSansPro-Bold";
@@ -109,24 +109,25 @@
   }
 
   section form ul li input[type='text'],input[type='tel'],input[type='email']{
-    width: 70%;
+    width: 90%;
     height: 20px;
   }
 
   section form select {
-    width: 72%;
+    width: 92%;
     height: 30px;
     margin-bottom: 5px;
   }
 
   section form textarea {
-    width: 80%;
+    width: 90%;
     height: 6rem;
     margin-bottom: 20px;
   }
 
   section form #terminos{
     width: 100%;
+    padding: 0px;
   }
 
   section form input{
@@ -140,6 +141,15 @@
 
   section form #radioButtons label{
     display: inline;
+  }
+
+  section form #radioButtons input{
+    margin-left: 15px;
+    margin-bottom: 0.8rem;
+  }
+
+  section form #radioButtons input:first-of-type{
+    margin-left: 0px;
   }
 
   section form .inlineCondiciones{

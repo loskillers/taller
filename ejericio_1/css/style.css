@@ -98,6 +98,10 @@
     font-family: "SourceSansPro-Light";
   }
 
+  section article .galeria{
+    text-align: center;
+  }
+
   section article .galeria img{
     display: inline-block;
     width: 25%;
