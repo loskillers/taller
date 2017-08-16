@@ -1,4 +1,4 @@
-$("figure img").hover(
+$("#participantes figure img").hover(
   function(){
       var id = $(this).attr("id");
       id = id.substr(3,1);
